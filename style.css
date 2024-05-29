@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+}
+.port-nav--container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.port-nav--logo-main {
+    font-family: "Pacifico", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5em;
+    color: #1e5d72;
+}
+.port-nav--logo-main span {
+    color: #783c28;
+}
+.port-nav--menu {
+    display: flex;
+    align-items: center;
+}
+.port-nav--menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+}
+.port-nav--menu ul li a {
+    text-decoration: none;
+    background-color: #eaeaea;
+    font-weight: bold;
+    color: #783c28;
+    font-size: 1em;
+    border-radius: 25px;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+}
+.port-nav--menu ul li a:hover {
+    background-color: #783c28;
+    color: #ffffff;
+}
+.port--main-bg-top {
+    background-color: #44aaff;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    height: 500px;
+    background-image: url("../assets/emma-howell-bold-paletteAbstract.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.port--main-bg-top--rig-col-abs-shad {
+    background-color: #ffffffc6;
+    position: absolute;
+    width: 550px;
+    top: 2em;
+    left: 6em;
+    padding: 1em;
+    font-size: 2em;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+    box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+}
+.port--main-bg-top--rig-col-abs-shad span {
+    font-family: "Pacifico", cursive;
+}
+
+.port--main-bg-top--rig-col-abs-shad p {
+    font-size: 0.4em;
+}
+.port--main-bg-top--rig-col-abs-shad a {
+    background-color: #783c28;
+    padding: 0.7em 3em 0.7em 3em;
+    border-radius: 25px;
+   
+    font-size: 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+}
+.port--main-pre-body--top {
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port--main-pre-body--top-child {
+    background-color: #000000;
+    width: 40%;
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 25px;
+}
+
+.port--main-pre-body--mid-top {
+    text-align: center;
+    margin: 0;
+}
+.body--mid-top--paraph {
+    font-weight: bold;
+    font-size: 2em;
+    color: #783c28;
+} 
+.port--main-pre-body--mid-top-window {
+    display: grid;
+    gap: 10px;;
+    grid-template-columns: repeat(5, 1fr);
+    width: 70%;
+    margin: 0 auto;
+}
+.mid-top-window-child {
+    border: 1px solid #000000;
+    height: 200px;
+    padding: 1em;
+}
+.mid-top-window-child span {
+    color: #783c28;
+}
+.outlined-child--title {
+    font-size: 1em;
+    font-weight: bold;
+    color: #783c28;
+}
+.outlined-child--paraph {
+    font-size: 0.7em;
+}
+.port--main-pre-body--mid-port {
+    background-color: #44aaff;
+}
