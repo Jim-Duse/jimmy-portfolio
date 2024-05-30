@@ -93,7 +93,7 @@ body {
     align-items: center;
 }
 .port--main-pre-body--top-child {
-    background-color: #000000;
+    background-color: #1e5d72;
     width: 40%;
     color: #ffffff;
     padding: 2em;
@@ -103,6 +103,7 @@ body {
 .port--main-pre-body--mid-top {
     text-align: center;
     margin: 0;
+    height: 410px;
 }
 .body--mid-top--paraph {
     font-weight: bold;
@@ -111,7 +112,7 @@ body {
 } 
 .port--main-pre-body--mid-top-window {
     display: grid;
-    gap: 10px;;
+    gap: 10px;
     grid-template-columns: repeat(5, 1fr);
     width: 70%;
     margin: 0 auto;
@@ -133,5 +134,24 @@ body {
     font-size: 0.7em;
 }
 .port--main-pre-body--mid-port {
-    background-color: #44aaff;
+    text-align: center;
+}
+.body--mid-port-header {
+    font-weight: bold;
+    font-size: 2em;
+    color: #783c28;
+    margin-bottom: 1em;
+}
+.body--mid-port-work--grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin: 0 auto;
+}
+.body--mid-port-work--grid-child {
+    background-color: #f1f1f1;
+    border: 1px solid #e4e4e4;
+    width: 420px;
+    height: 270px;
 }
