@@ -35,7 +35,7 @@ body {
     font-weight: bold;
     color: #783c28;
     font-size: 1em;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 0.3em 1.5em 0.3em 1.5em;
 }
 .port-nav--menu ul li a:hover {
@@ -55,7 +55,7 @@ body {
     position: relative;
 }
 .port--main-bg-top--rig-col-abs-shad {
-    background-color: #ffffffc6;
+    background-color: #ffffffb8;
     position: absolute;
     width: 550px;
     top: 2em;
@@ -146,7 +146,7 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    width: 70%;
+    width: 1290px;
     margin: 0 auto;
 }
 .body--mid-port-work--grid-child {
@@ -154,4 +154,122 @@ body {
     border: 1px solid #e4e4e4;
     width: 420px;
     height: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.port--main-pre-body--mid--lower-port {
+    background-color: #ffffff;
+    
+}
+.port--main-pre-body--mid--lower-mid {
+    width: 60%;
+    margin: 3em auto;
+    display: flex;
+    height: 200px;
+}
+.port--main-pre-body--mid--lower-child {
+    background-color: #000000;
+    flex-grow: 1;
+    margin-left: 0.7em;
+    text-align: center;
+    padding: 1em 0;
+}
+.port--main-pre-body--mid--lower-child h1 {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 3em;
+}
+.port--main-pre-body--mid--lower-child p {
+    color: #ffffff;
+    margin: 0;
+}
+.port--main-body--xp-main {
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.port--main-body--xp-main-flex-l {
+    height: 600px;
+    background-color: #f3f3f3;
+}
+.port--main-body--xp-main-flex-l h1 {
+    margin: 1em;
+}
+.port--main-body--xp-main-flex-r {
+    background-color: #ffffff;
+    height: 600px;
+    background-image: url("../assets/coffeemug.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.xp-main-flex--flex-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 1.5em;
+}
+.xp-main-flex--flex-label {
+    grid-column: 1;
+    font-weight: bold;
+}
+.xp-main-flex--flex-media {
+
+    grid-column: 2 / 4;
+}
+.xp-main-flex--flex-media-progbar {
+    background-color: #c9c9c9;
+    border-radius: 3px;
+    padding: 0px;
+}
+.media-progbar--child {
+    background: linear-gradient(90deg, #783c28 0%, #1e5d72 40%);
+    width: 85%;
+    /* Adjust with JavaScript */
+    height: 12px;
+    border-radius: 3px;
+}
+.port--main-body--xp-resume-main {
+    text-align: center;
+    height: auto;
+}
+.port--main-body--xp-resume-main button {
+    background-color: #1e5d72;;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.5em;
+    border: none;
+    width: 70%;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 2em 0 0 0;
+}
+.xp-resume-main--block {
+    background-color: #f6f6f6;
+    width: 68.1%;
+    margin: 0 auto;
+    /*display: none;*/
+    overflow: hidden;
+    text-align: start;
+    padding: 1em;
+}
+.xp-resume-main--block p {
+    background-color: #ffffff;
+    padding: 0.3em;
+    margin: 0 0.5em 0.5em 0;
+    font-size: 0.9em;
+    border-radius: 3px;
+    border: 1px solid #1e5d72;
+    width: fit-content;
+    display:inline-block;
+}
+.xp-resume-main--block h2 {
+    font-size: 1.2em;
+}
+.xp-resume-main--block h3 {
+    font-size: 0.9em;
+}
+.xp-resume-main--block li {
+    font-size: 0.8em;
 }
