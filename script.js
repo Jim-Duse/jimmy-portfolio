@@ -1,4 +1,4 @@
-//HTMLinner - myJob - Descriptions
+//JSON Fetch - HTMLinner - myJob - Descriptions
 fetch('./jobDescription.json')
         .then(response => {
             if (!response.ok) {
