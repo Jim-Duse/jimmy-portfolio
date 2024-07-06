@@ -1,5 +1,5 @@
-//JSON Fetch - HTMLinner - myJob - Descriptions
-fetch('./jobDescription.json')
+//JSON Fetch - HTMLinner - myJob - Descriptions - jimmy.dev
+fetch('./jobDescriptionVault.json')
         .then(response => {
             if (!response.ok) {
             throw new Error('Request unavailable');
@@ -7,8 +7,10 @@ fetch('./jobDescription.json')
             return response.json();
         })
         .then(data => {
+          //Pull - JSON Objects
             const jobItem = data.jobDescriptionFH;
-            console.log(jobItem);
+            const jobItem2 = data.jobDescriptionCVS;
+            console.log(jobItem2);
                 const xpParseUl = document.createElement('ul');
                 jobItem.forEach(function(item) {
                 const xpParseLi = document.createElement('li');
@@ -18,8 +20,6 @@ fetch('./jobDescription.json')
             const listContainer = document.getElementById('xp-js-dist-init');
             listContainer.appendChild(xpParseUl);
         })
-
-
 //ResumeMenu - jimmy.dev
 var divResumeChild = document.getElementsByClassName("expandTrigger");
 var x;
