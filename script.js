@@ -8,17 +8,44 @@ fetch('./jobDescriptionVault.json')
         })
         .then(data => {
           //Pull - JSON Objects
-            const jobItem = data.jobDescriptionFH;
-            const jobItem2 = data.jobDescriptionCVS;
-            console.log(jobItem2);
-                const xpParseUl = document.createElement('ul');
-                jobItem.forEach(function(item) {
+            const jobItem_fh = data.jobDescriptionFH;
+            const jobItem_cvs = data.jobDescriptionCVS;
+            const jobItem_wfargo = data.jobDescriptionWFargo;
+
+            console.log(jobItem_cvs);
+
+                const xpParseUl_fh = document.createElement('ul');
+
+                jobItem_fh.forEach(function(item) {
                 const xpParseLi = document.createElement('li');
                 xpParseLi.textContent = item;
-                xpParseUl.appendChild(xpParseLi);
-            });
-            const listContainer = document.getElementById('xp-js-dist-init');
-            listContainer.appendChild(xpParseUl);
+                xpParseUl_fh.appendChild(xpParseLi);
+                })
+
+                const xpParseUl_cvs = document.createElement('ul');
+
+                jobItem_cvs.forEach(function(item) {
+                const xpParseLi = document.createElement('li');
+                xpParseLi.textContent = item;
+                xpParseUl_cvs.appendChild(xpParseLi);
+                });
+
+                const xpParseUl_wfargo = document.createElement('ul');
+
+                jobItem_wfargo.forEach(function(item) {
+                const xpParseLi = document.createElement('li');
+                xpParseLi.textContent = item;
+                xpParseUl_wfargo.appendChild(xpParseLi);
+                });
+
+            const listContainer_fh = document.getElementById('xp-js-dist-init-fh');
+            listContainer_fh.appendChild(xpParseUl_fh);
+
+            const listContainer_cvs = document.getElementById('xp-js-dist-init-cvs');
+            listContainer_cvs.appendChild(xpParseUl_cvs);
+
+            const listContainer_wfargo = document.getElementById('xp-js-dist-init-wfargo');
+            listContainer_wfargo.appendChild(xpParseUl_wfargo);
         })
 //ResumeMenu - jimmy.dev
 var divResumeChild = document.getElementsByClassName("expandTrigger");

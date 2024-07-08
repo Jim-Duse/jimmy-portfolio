@@ -230,6 +230,7 @@ body {
     border-radius: 3px;
 }
 .port--main-body--xp-resume-main {
+
     text-align: center;
     height: auto;
 }
@@ -245,10 +246,10 @@ body {
     margin: 2em 0 0 0;
 }
 .xp-resume-main--block {
-    background-color: #f6f6f6;
-    width: 68.1%;
+    background-color: #eeeeee;
+    width: 68.4%;
     margin: 0 auto;
-    /*display: none;*/
+    /*display: none; */
     overflow: hidden;
     text-align: start;
     padding: 1em;
@@ -272,11 +273,30 @@ body {
 .xp-resume-main--block li {
     font-size: 0.8em;
 }
+.xp-resume-main--block--cert {
+
+}
+.xp-resume-main--block--cert-img-container {
+    text-align: center;
+    padding: 0.5em;
+}
+.xp-resume-main--block--cert-img-container img {
+    width: 95%;
+}
+.cert-img-caption {
+    padding: 0;
+}
+.cert-img-caption a {
+    text-decoration: none;
+    color: #1e5d72;
+    font-weight: bold;
+}
 .port--main-body--footer-main {
     background-color: #68b5c5;
     height: 400px;
     display: grid;
     gap: 0px;
+    margin-top: 3em;
     grid-template-columns: repeat(2, 1fr);
 
 }
