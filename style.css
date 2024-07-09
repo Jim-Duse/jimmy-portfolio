@@ -292,7 +292,8 @@ body {
     font-weight: bold;
 }
 .port--main-body--footer-main {
-    background-color: #68b5c5;
+    background-color: #1e5d72;
+    color: white;
     height: 400px;
     display: grid;
     gap: 0px;
@@ -301,12 +302,30 @@ body {
 
 }
 .port--body--footer-main-l {
-    background-color: #d45d5d;
     padding: 1em;
+}
+.port--body--footer-main-l p {
+    font-size:1em;
+    background-color: #44aaff;
 }
 .port--body--footer-main-l p {
     font-size: 0.7em;
 }
 .port--body--footer-main-r {
-    background-color: #ae5dd4;
+}
+
+.footer-main-l-contact--main {
+    display: flex;
+    width: 400px;
+}
+.footer-main-l-contact-icon {
+    padding: 0;
+}
+.footer-main-l-contact-icon span{
+    font-size: 1.4em;
+}
+.footer-main-l-contact-text {
+    padding-top: 0.25em;
+    margin-left: 0.5em;
+    font-size: 0.8em;
 }

@@ -12,7 +12,7 @@ fetch('./jobDescriptionVault.json')
             const jobItem_cvs = data.jobDescriptionCVS;
             const jobItem_wfargo = data.jobDescriptionWFargo;
 
-            console.log(jobItem_cvs);
+            //console.log(jobItem_cvs);
 
                 const xpParseUl_fh = document.createElement('ul');
 
