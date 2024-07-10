@@ -306,12 +306,12 @@ body {
 }
 .port--body--footer-main-l p {
     font-size:1em;
-    background-color: #44aaff;
 }
 .port--body--footer-main-l p {
     font-size: 0.7em;
 }
 .port--body--footer-main-r {
+    padding: 0;
 }
 
 .footer-main-l-contact--main {
@@ -329,3 +329,47 @@ body {
     margin-left: 0.5em;
     font-size: 0.8em;
 }
+
+.footer-main-l-social-media--main {
+    margin-top: 2em;
+    font-size: 2em;
+}
+.footer-main-l-footer--info {
+    margin-top: 0.9em;
+    font-size: 0.8em;
+}
+.footer-main-r-form--main {
+    margin: 0;
+}
+.footer-main-r-form--main-label {
+    font-size: 0.8em;
+    padding: 0.7em 0;
+}
+.footer-main-r-form--main-input {
+    padding: 0;
+}
+.footer-main-r-form--main-input input[type=text] {
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    width: 75%;
+    outline: none;
+    padding: 0.1em;
+}
+.footer-main-r-form--main-input textarea {
+    height: 90px;
+    border-radius: 5px;
+    border: 0;
+    width: 75%;
+    padding: 0.3em;
+}
+.footer-main-r-form--main  input[type=submit] {
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 1em;
+    border: 0;
+    width: 25%;
+    outline: none;
+    padding: 0.1em;
+}
+
