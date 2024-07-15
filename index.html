@@ -297,7 +297,7 @@
 
             <div class="xp-resume-main--block">
                 <h2>Level 2 IT support enginner</h2> 
-                <div>Food for the Hungry, Phoenix, AZ | March 2020 - Present</div>h3>
+                <h3>Food for the Hungry, Phoenix, AZ | March 2020 - Present</h3>
 
                 --External generated JSON list--
 
@@ -411,42 +411,55 @@
 
                 
             </div>
-            <form class="port--body--footer-main-r">
+        <div class="port--body--footer-main-r">
                 <h2>Or reach out to me directly</h2>
-                <form action="https://formsubmit.co/jimdusejim@ggit mail.com" method="POST" />
-                <div class="footer-main-r-form--main">
-                     <div class="footer-main-r-form--main-label">
-                        Name:
-                     </div>
-                     <div class="footer-main-r-form--main-input">
-                        <input type="text" name="name">
-                     </div>
-                </div>
+                <p>**Feel free send me a message, it will be routed directly to my inbox - Empty form cannot be submitted.</p>
+                <form action="https://formsubmit.co/jimdusejim@gmail.com" method="POST" />
+                <!--<form action="https://http://127.0.0.1:3000/" method="POST" />-->
+                            <div class="footer-main-r-form--main">
+                                <div class="footer-main-r-form--main-label">
+                                    Name:
+                                </div>
+                                <div class="footer-main-r-form--main-input">
+                                    <input type="text" name="name" required>
+                                </div>
+                            </div>
 
-                <div class="footer-main-r-form--main">
-                    <div class="footer-main-r-form--main-label">
-                       Email:
-                    </div>
-                    <div class="footer-main-r-form--main-input">
-                       <input type="text" name="email">
-                    </div>
-               </div>
+                            <div class="footer-main-r-form--main">
+                                <div class="footer-main-r-form--main-label">
+                                Email:
+                                </div>
+                                <div class="footer-main-r-form--main-input">
+                                <input type="text" name="email" required>
+                                </div>
+                            </div>
 
-               <div class="footer-main-r-form--main">
-                <div class="footer-main-r-form--main-label">
-                   Message:
+                            <div class="footer-main-r-form--main">
+                                <div class="footer-main-r-form--main-label">
+                                Message:
+                                </div>
+                                <div class="footer-main-r-form--main-input">
+                                    <textarea name="body" id="checkValtext" cols="30" rows="10" required></textarea>
+                                </div>
+                            </div>
+                        <div class="footer-main-r-form--main">
+                            <input type="submit" id="checkVal" onclick="submitNotify()" value="Send" disabled>
+                        </div>
+                    </form>
                 </div>
-                <div class="footer-main-r-form--main-input">
-                    <textarea name="body" id="" cols="30" rows="10"></textarea>
-                </div>
-           </div>
-           <div class="footer-main-r-form--main">
-                <input type="submit" value="Send">
-           </div>
-        </form>
             </div>
         </div>
-    </div>
+
+        <!--Mail Load segment-->
+        <div class="port-mail-load--container-modal">
+            <div class="port-mail-load--container-modal-overlay"></div>
+                <div class="port-mail-load--container-modal-content">
+                    <h2>Please wait, Email is being sent...</h2>
+                    <p id="loadApi"></p>
+                    <p id="loadText"></p>
+                    <p id="loadFinal"></p>
+            </div>
+        </div>
     <script src="./script.js"></script>
 </body>
 </html>

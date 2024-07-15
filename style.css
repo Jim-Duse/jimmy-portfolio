@@ -43,12 +43,12 @@ body {
     color: #ffffff;
 }
 .port--main-bg-top {
-    background-color: #44aaff;
+    background-color: #783c28;
     width: 100%;
     /* display: grid;
     grid-template-columns: repeat(2, 1fr); */
     height: 500px;
-    background-image: url("./assets/emma-howell-bold-paletteAbstract.jpg");
+    background-image: url("./assets/main_artboard_abstract.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +294,7 @@ body {
 .port--main-body--footer-main {
     background-color: #1e5d72;
     color: white;
-    height: 400px;
+    height: 450px;
     display: grid;
     gap: 0px;
     margin-top: 3em;
@@ -302,7 +302,8 @@ body {
 
 }
 .port--body--footer-main-l {
-    padding: 1em;
+    padding: 1em 0 0 3.5em;
+
 }
 .port--body--footer-main-l p {
     font-size:1em;
@@ -333,6 +334,7 @@ body {
 .footer-main-l-social-media--main {
     margin-top: 2em;
     font-size: 2em;
+    font-size: 1.5em;
 }
 .footer-main-l-footer--info {
     margin-top: 0.9em;
@@ -345,6 +347,10 @@ body {
     font-size: 0.8em;
     padding: 0.7em 0;
 }
+.port--body--footer-main-r p {
+    margin: 0;
+    font-size: 0.7em;
+}
 .footer-main-r-form--main-input {
     padding: 0;
 }
@@ -355,6 +361,7 @@ body {
     width: 75%;
     outline: none;
     padding: 0.1em;
+    
 }
 .footer-main-r-form--main-input textarea {
     height: 90px;
@@ -362,6 +369,7 @@ body {
     border: 0;
     width: 75%;
     padding: 0.3em;
+    outline: none;
 }
 .footer-main-r-form--main  input[type=submit] {
     height: 30px;
@@ -371,5 +379,39 @@ body {
     width: 25%;
     outline: none;
     padding: 0.1em;
+    cursor: pointer;
+}
+.footer-main-r-form--main  input[type=submit]:hover {
+    background-color: #783c28;
+    color: white;
+}
+.port-mail-load--container-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.port-mail-load--container-modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.port-mail-load--container-modal-content {
+    background-color: #ffffff;
+    padding: 3em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.port-mail-load--container-modal.open {
+    display: flex;
 }
 

@@ -62,3 +62,33 @@ for (x = 0; x < divResumeChild.length; x++) {
     }
   });
 }
+
+
+const checkText = document.getElementById("checkValtext");
+const submitChecker = document.getElementById("checkVal");
+
+checkText.addEventListener('input', function() {
+  if(checkText.value.trim() === '') {
+    submitChecker.disabled = true;
+  } else {
+    submitChecker.disabled = false;
+  }
+});
+
+function submitNotify() {
+  //console.log("Show Modal");
+  const modalOpener = document.querySelector(".port-mail-load--container-modal");
+  //const modalContent = document.querySelector(".port-mail-load--container-modal-content");
+  modalOpener.classList.add("open");
+  document.documentElement.scrollTop = 0;
+
+  let loadApivar = document.getElementById("loadApi");
+  let loadTextvar = document.getElementById("loadText");
+  let loadFinvar = document.getElementById("loadFinal");
+
+  setTimeout(function() {loadApivar.innerHTML = "API server connecting..."}, 1000);
+  setTimeout(function() {loadTextvar.innerHTML = "Checking the text format..."}, 4000);
+  setTimeout(function() {loadFinvar.innerHTML = "Finalizing..."}, 6000);
+
+  setTimeout(function() {modalOpener.classList.remove("open")}, 9000);
+}
