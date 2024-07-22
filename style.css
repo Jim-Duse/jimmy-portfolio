@@ -85,7 +85,7 @@ body {
     color: #ffffff;
 }
 .port--main-pre-body--top {
-    background-color: #f5f5f5;
+    background-color: #e9e9e9;
     width: 100%;
     height: 200px;
     display: flex;
@@ -98,6 +98,68 @@ body {
     color: #ffffff;
     padding: 2em;
     border-radius: 25px;
+}
+
+.port-work--child-modal-styler {
+    position: fixed;
+    background-color: rgba(104, 104, 104, 0.329);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+.port-work--child-modal-styler:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+.port-work--child-modal-styler-canvas {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: rgba(90, 90, 90, 0.418) 0px 20px 30px -2px;
+}
+.port-work--child-modal-styler-canvas img {
+    width: 95%;
+    margin-top: 2.8em;
+    margin-bottom: 2em;
+}
+.port-work--child-modal-styler-canvas-close {
+    color: #1e5d72;
+    line-height: 50px;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+.work--grid-child-project-media {
+    margin: 0;
+
+}
+.work--grid-child-project-media img {
+    width: 100%;
+}
+
+.work--grid-child-project-caption {
+    text-align: start;
+    padding: 0;
+}
+.work--grid-child-project-caption ul {
+    margin: 0;
+    font-size: 0.7em;
 }
 
 .port--main-pre-body--mid-top {
@@ -159,9 +221,10 @@ body {
     background-color: #f1f1f1;
     border: 1px solid #e4e4e4;
     width: 420px;
-    height: 270px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 0.5em
 }
 .port--main-pre-body--mid--lower-port {
     background-color: #ffffff;
@@ -245,10 +308,10 @@ body {
     width: 70%;
 }
 .cc {
-    width: 65%;
+    width: 60%;
 }
 .fbd {
-    width: 60%;
+    width: 63%;
 }
 .sdb {
     width: 80%;
@@ -260,13 +323,13 @@ body {
     width: 99%;
 }
 .dcs {
-    width: 55%;
+    width:45%;
 }
 .lb {
     width: 75%;
 }
 .tm {
-    width: 85%;
+    width: 90%;
 }
 .port--main-body--xp-resume-main {
 
