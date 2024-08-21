@@ -1,4 +1,4 @@
-//JSON Fetch - HTMLinner - myJob - Descriptions - jimmy.dev
+//JSON FETCH - HTMLINNER - MYJOB - DESCRIPTIONS - JIMMY.DEV
 fetch('./jobDescriptionVault.json')
         .then(response => {
             if (!response.ok) {
@@ -47,7 +47,8 @@ fetch('./jobDescriptionVault.json')
             const listContainer_wfargo = document.getElementById('xp-js-dist-init-wfargo');
             listContainer_wfargo.appendChild(xpParseUl_wfargo);
         })
-//ResumeMenu - jimmy.dev
+
+//RESUMEMENU - JIMMY.DEV
 var divResumeChild = document.getElementsByClassName("expandTrigger");
 var x;
 
@@ -63,7 +64,7 @@ for (x = 0; x < divResumeChild.length; x++) {
   });
 }
 
-
+//USER - SUBMIT - CONTROLLER
 const checkText = document.getElementById("checkValtext");
 const submitChecker = document.getElementById("checkVal");
 
@@ -75,13 +76,11 @@ checkText.addEventListener('input', function() {
   }
 });
 
+//USER - SUBMIT - CONTROLLER - TIMER
 function submitNotify() {
-  //console.log("Show Modal");
   const modalOpener = document.querySelector(".port-mail-load--container-modal");
-  //const modalContent = document.querySelector(".port-mail-load--container-modal-content");
   modalOpener.classList.add("open");
   document.documentElement.scrollTop = 0;
-
   let loadApivar = document.getElementById("loadApi");
   let loadTextvar = document.getElementById("loadText");
   let loadFinvar = document.getElementById("loadFinal");
@@ -92,3 +91,23 @@ function submitNotify() {
 
   setTimeout(function() {modalOpener.classList.remove("open")}, 9000);
 }
+
+//USER SCROLL - CONTROLLER
+function saveScrollPosition() {
+    //current scroll position
+    if (window.scrollY !== 0) {
+        history.replaceState(null, null, '#' + window.scrollY);
+    }
+}
+//Restore the scroll position
+function restoreScrollPosition() {
+    const hash = window.location.hash;
+    if (hash) {
+        const scrollPosition = parseInt(hash.substring(1), 10);
+        if (!isNaN(scrollPosition)) {
+            window.scrollTo(0, scrollPosition);
+        }
+    }
+}
+window.addEventListener('scroll', saveScrollPosition);
+window.addEventListener('load', restoreScrollPosition);

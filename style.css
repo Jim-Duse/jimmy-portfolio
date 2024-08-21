@@ -162,6 +162,10 @@ body {
     font-size: 0.7em;
 }
 
+.work--grid-child-project-caption li {
+    margin-top: 0.3em;
+}
+
 .port--main-pre-body--mid-top {
     text-align: center;
     margin: 0;
