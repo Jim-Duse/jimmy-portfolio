@@ -55,18 +55,38 @@ body {
     position: relative;
 }
 .port--main-bg-top--rig-col-abs-shad {
-    background-color: #ffffffb8;
     position: absolute;
-    width: 550px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 300px;
+    width: 700px;
     top: 2em;
     left: 6em;
-    padding: 1em;
     font-size: 2em;
+}
+.port--main-bg-top--rig-col-abs-shad-left {
+    background-color: #ffffff4e;;
+    padding: 1em;
     border: 1px solid #ffffff;
     border-radius: 25px;
+    width: 500px;
     -webkit-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
     -moz-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
     box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+}
+.port--main-bg-top--rig-col-abs-shad-right {
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0em;
+    width: fit-content;
+    -webkit-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+    -moz-box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+    box-shadow: 10px 11px 38px 4px rgba(0,0,0,0.32);
+}
+.port--main-bg-top--rig-col-abs-shad-right img {
+    width: 250px;
 }
 .port--main-bg-top--rig-col-abs-shad span {
     font-family: "Pacifico", cursive;
@@ -164,6 +184,12 @@ body {
 
 .work--grid-child-project-caption li {
     margin-top: 0.3em;
+}
+
+.work--grid-child-project-caption a {
+    text-decoration: none;
+    color: #783c28;
+    font-weight: bold;
 }
 
 .port--main-pre-body--mid-top {
