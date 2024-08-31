@@ -27,7 +27,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 370px;
+    width: 400px;
 }
 .port-nav--menu ul li a {
     text-decoration: none;
