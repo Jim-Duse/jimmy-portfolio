@@ -1,3 +1,11 @@
+document.onreadystatechange = function () {
+  const loaderModalOpener = document.querySelector(".port-nav-load--global");
+  if(document.readyState !== "complete") {
+      loaderModalOpener.classList.add("open");
+  } else {
+      loaderModalOpener.classList.remove("open")
+  }
+}
 //JSON FETCH - HTMLINNER - MYJOB - DESCRIPTIONS - JIMMY.DEV
 fetch('./jobDescriptionVault.json')
         .then(response => {
@@ -87,9 +95,9 @@ function submitNotify() {
 
   setTimeout(function() {loadApivar.innerHTML = "API server connecting..."}, 1000);
   setTimeout(function() {loadTextvar.innerHTML = "Checking the text format..."}, 4000);
-  setTimeout(function() {loadFinvar.innerHTML = "Finalizing..."}, 6000);
+  setTimeout(function() {loadFinvar.innerHTML = "Finalizing..."}, 10000);
 
-  setTimeout(function() {modalOpener.classList.remove("open")}, 9000);
+  setTimeout(function() {modalOpener.classList.remove("open")}, 20000);
 }
 
 //USER SCROLL - CONTROLLER

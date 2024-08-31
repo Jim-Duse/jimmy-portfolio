@@ -552,3 +552,53 @@ body {
     display: flex;
 }
 
+
+#load_js_global {
+    border: 20px solid #29748d;
+    border-radius: 50%;
+    border-top: 20px solid #ab5539;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+    margin: 15em auto 0 auto;
+
+}
+
+.port-nav-load--global   {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.port-nav-load--global.open {
+    display: flex;
+}
+.port-nav-load--global-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.port-nav-load--global-overlay-content {
+    background-color: #ffffff8f;
+    padding: 3em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
