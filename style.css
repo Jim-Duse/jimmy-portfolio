@@ -66,7 +66,7 @@ body {
     font-size: 2em;
 }
 .port--main-bg-top--rig-col-abs-shad-left {
-    background-color: #ffffff4e;;
+    background-color: #ffffffa6;
     padding: 1em;
     border: 1px solid #ffffff;
     border-radius: 25px;
@@ -90,6 +90,7 @@ body {
 }
 .port--main-bg-top--rig-col-abs-shad span {
     font-family: "Pacifico", cursive;
+    color: #783c28;
 }
 
 .port--main-bg-top--rig-col-abs-shad p {
