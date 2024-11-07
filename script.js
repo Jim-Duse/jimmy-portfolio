@@ -71,6 +71,14 @@ for (x = 0; x < divResumeChild.length; x++) {
     }
   });
 }
+//TEMP - MESSAGE - CONTROLLER
+function tempMessage() {
+  const messageDiv = document.getElementById('temp_message');
+  messageDiv.style.display = 'block';
+  setTimeout(() => {
+    messageDiv.style.display = 'none'; }, 10000);
+}
+window.onload = tempMessage;
 
 //USER - SUBMIT - CONTROLLER
 const checkText = document.getElementById("checkValtext");

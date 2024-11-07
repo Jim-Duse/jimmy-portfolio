@@ -42,6 +42,15 @@ body {
     background-color: #783c28;
     color: #ffffff;
 }
+.port-temp-message--container {
+    background-color: #ffc800;
+    border: 1px solid #daab00;
+    width: 60%;
+    font-size: 0.8em;
+    margin: 0.5em auto;
+    padding: 0.9em 0 0.9em 1em;
+    border-radius: 10px;
+}
 .port--main-bg-top {
     background-color: #783c28;
     width: 100%;
@@ -552,8 +561,6 @@ body {
 .port-mail-load--container-modal.open {
     display: flex;
 }
-
-
 #load_js_global {
     border: 20px solid #29748d;
     border-radius: 50%;
